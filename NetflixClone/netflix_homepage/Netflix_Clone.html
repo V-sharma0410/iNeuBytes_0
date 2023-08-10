@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Netflix_Clone.css">
+</head>
+<body>
+    <div class="container">
+            <nav class="navigation flex">
+                <div class="logo">
+                    <img src="Netflix_2015_logo.svg.png" alt="logo">
+                </div>
+
+                <div class="navbar flex" id="navbar">
+                    <div class="left-nav flex">
+                        <ul class="flex menu">
+                            <li>Home</li>
+                            <li>TV Shows</li>
+                            <li>Movies</li>
+                            <li>New & Popular</li>
+                            <li>My list</li>
+                        </ul>
+                    </div>
+
+                    <div class="right-nav flex">
+                        <input type="text" name="search" id="searchbox" placeholder="Search Here">
+                        <span class="fa fa-search fa" id="search" aria-hidden="true" onclick="searchBox()">
+                        </span>
+                        <span class="fa fa-bell-o fa" aria-hidden="true"></span>
+                        <img src="netflix-profile-pictures.jpg" alt="">
+                        <span class="fa fa-caret-down fa" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <span class="togglebtn" onclick="toggle()">&#9776;</span> 
+            </nav>
+            
+            <div class="inner">
+                <div class="banner flex">
+                    <div class="background-image"><img src="backgound-image.jpg" alt=""></div>
+                    <div class="content"><div class="local-txt"><span><img src="netflixmainlogo.png" alt=""></span>SERIES</div>
+                    <span class="text"><h2>MONEY <h1> HEIST </h1></h2></span>
+                    <div class="banner-button flex">
+                        <button class="btn"><span class="fa fa-play play" aria-hidden="true"></span>Play</button>
+                        <button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true"></span>More Info</button>
+                     </div></div>
+                </div>
+            </div>
+            <div class="carousel">
+                <h3>New Release</h3>
+                <div class="carousel-slider">
+                    <div class="carouselList">
+                            <img src="witcher.jpg" alt="">
+                            <img src="hidden strike.jpg" alt="">
+                            <img src="zom100.jpg" alt="">
+                            <img src="sandman.jpg" alt="">
+                            <img src="paradise.jpg" alt="">
+                            <img src="lincoln-lawyer-netflix.jpg" alt="">
+                            <img src="alone.jpg" alt="">
+                            <img src="merderer.jpg" alt="">
+                            <img src="spiderhead.jpg" alt="">
+                            <img src="cultleader.jpg" alt="">
+                            <img src="littleheist.jpg" alt="">
+                            <img src="heartstopper.jpg" alt="">
+                            <img src="dp.jpg" alt="">
+                            <img src="poisoned.jpg" alt="">
+                            <img src="aperfectstory.jpg" alt="">
+                            <img src="bleach.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <h3>Trending Now</h3>
+                <div class="carousel-slider">
+                    <div class="carouselList">
+                            <img src="hidden strike.jpg" alt="">
+                            <img src="Ambulance-Banniere.jpg" alt="" >
+                            <img src="extraction.jpg" alt="">
+                            <img src="the_persuit_of_ happyness.jpg" alt="">
+                            <img src="bazaar.jpg" alt="">
+                            <img src="faster.jpg" alt="">
+                            <img src="bloodhounds.jpg" alt="">
+                            <img src="red notice.jpg" alt="">
+                            <img src="wednesday.jpg" alt="">
+                            <img src="stranger things.jpg" alt="">
+                            <img src="inception.jpg" alt="">
+                            <img src="dasara.jpg" alt="">
+                            <img src="thivunu.jpg" alt="">
+                            <img src="hiddenlove.jpg" alt="">
+                            <img src="lincoln-lawyer-netflix.jpg" alt="">
+                            <img src="never i haveever.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+           
+            <div class="carousel">
+                <h3>Indian Movies</h3>
+                <div class="carousel-slider">
+                    <div class="carouselList">
+                            <img src="dasara.jpg" alt="">
+                            <img src="raaes.jpg" alt="">
+                            <img src="shahzada.jpg" alt="">
+                            <img src="sooryavanshi.jpg" alt="">
+                            <img src="beast.jpg" alt="">
+                            <img src="thivunu.jpg" alt="">
+                            <img src="manjhi.jpg" alt="">
+                            <img src="pk.jpg" alt="">
+                            <img src="taarezameenper.jpg" alt="">
+                            <img src="omg.jpg" alt="">
+                            <img src="sanju.jpg" alt="">
+                            <img src="RRR.jpg" alt="">
+                            <img src="darlings.jpg" alt="">
+                            <img src="pathan.jpg" alt="">
+                            <img src="kick.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <h3>Top Searches</h3>
+                <div class="carousel-slider">
+                    <div class="carouselList">
+                            <img src="red notice.jpg" alt="">
+                            <img src="extraction.jpg" alt="">
+                            <img src="witcher.jpg" alt="">
+                            <img src="inception.jpg" alt="">
+                            <img src="lincoln-lawyer-netflix.jpg" alt="">
+                            <img src="moneyheist.jpg" alt="">
+                            <img src="sooryavanshi.jpg" alt="">
+                            <img src="beast.jpg" alt="">
+                            <img src="dasara.jpg" alt="">
+                            <img src="kotafactory.jpg" alt="">
+                            <img src="lucy.jpg" alt="">
+                            <img src="dark.jpg" alt="">
+                            <img src="alive.jpg" alt="">
+                            <img src="gods of egypt.jpg" alt="">
+                            <img src="theglory.jpg" alt="">
+                            <img src="wednesday.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <h3>Blockbuster Movies</h3>
+                <div class="carousel-slider">
+                    <div class="carouselList">
+                            <img src="witcher.jpg" alt="">
+                            <img src="extraction.jpg" alt="">
+                            <img src="wednesday.jpg" alt="">
+                            <img src="RRR.jpg" alt="">
+                            <img src="red notice.jpg" alt="">
+                            <img src="pk.jpg" alt="">
+                            <img src="stranger things.jpg" alt="">
+                            <img src="lincoln-lawyer-netflix.jpg" alt="">
+                            <img src="inception.jpg" alt="">
+                            <img src="lucy.jpg" alt="">
+                            <img src="beast.jpg" alt="">
+                            <img src="pathan.jpg" alt="">
+                            <img src="paradise.jpg" alt="">
+                            <img src="the_persuit_of_ happyness.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel">
+                <h3>Action Heroes</h3>
+                <div class="carousel-slider">
+                    <div class="carouselList">
+                        <img src="hidden strike.jpg" alt="">
+                        <img src="faster.jpg" alt="">
+                        <img src="extraction.jpg" alt="">
+                        <img src="red notice.jpg" alt="">
+                        <img src="RRR.jpg" alt="">
+                        <img src="thivunu.jpg" alt="">
+                        <img src="red notice.jpg" alt="">
+                        <img src="Ambulance-Banniere.jpg" alt="">
+                        <img src="bloodhounds.jpg" alt="">
+                        <img src="sooryavanshi.jpg" alt="">
+                        <img src="lucy.jpg" alt="">
+                        <img src="stranger things.jpg" alt="">
+                        <img src="KGF-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footercon">
+          <ul class="list1">
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Investor Relation</a></li>
+            <li><a href="">Ways to Watch</a></li>
+            <li><a href="">Corporate Information</a></li>
+            <li><a href="">Netflix Originals</a></li>
+          </ul>
+          <ul class="list1">
+            <li><a href="">Home</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+          <ul class="list1">
+            <li><a href="">Account</a></li>
+            <li><a href="">Redeem Gift Cards</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Speed Test</a></li>
+          </ul>
+          <ul class="list1">
+            <li><a href="">Media Center</a></li>
+            <li><a href="">Buy Gift Cards</a></li>
+            <li><a href="">Cookie Preferences</a></li>
+            <li><a href="">Legal Notices</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="end">
+        <h2>Netflix US</h2>
+    <script src="Netflix_Clone.js"></script>
+</body>
+</html>

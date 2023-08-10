@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+@import url("https://fonts.googleapis.com/css?family=Changa");
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+nav{
+    position: absolute;
+    background-color: transparent;
+    font-size: 4rem;
+    font-weight: 900;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Tangerine;
+    color: black;
+}
+.background-image{
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+.background-image img{
+    width: 100%;
+    height: 100vh;
+}
+.main{
+    position: absolute;
+    top: 10rem;
+    left: 13rem;
+    width: 70%;
+    background-color: rgb(240, 249, 255);
+    padding: 0 5rem;
+    border-radius: 0.3rem;
+}
+.centre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+button{
+    height: 3rem;
+    width: 12rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: rgb(43, 160, 255);
+    color: white;
+    font-family: Changa;
+}
+button:hover{
+    background-color: rgb(0, 140, 255);
+}
+select{
+    height: 3rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: rgb(137, 202, 255);
+    font-family: Changa;
+}
+h1{
+    font-family: Dancing Script;
+    font-size: 2rem;
+    font-style: oblique;
+}
+h2{
+    font-family: Dancing Script;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+@media only screen and (max-width:1090px) {
+    .main{
+        left: 8rem;
+    }
+    button{
+        height: 2.5rem;
+        width: 10rem;
+        font-size: 1.2rem;
+    }
+    select{
+        height: 2.5rem;
+        width: 15rem;
+        font-size: 1.2rem;
+    }
+    .centre{
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width:710px) {
+    nav{
+        font-size: 3rem;
+    }
+    .main{
+        left: 6rem;
+        padding: 0 2rem;
+    }
+    button{
+        height: 2rem;
+        width: 8rem;
+        font-size: 1.1rem;
+    }
+    select{
+        height: 2rem;
+        width: 12rem;
+        font-size: 1.1rem;
+    }
+    .centre{
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width:440px) {
+    .main{
+        left: 3rem;
+        padding: 0 1rem;
+    }
+    button{
+        height: 1.5rem;
+        width: 4rem;
+        font-size: 0.5rem;
+    }
+    select{
+        height: 1.5rem;
+        width: 7rem;
+        font-size: 0.5rem;
+    }
+
+}

@@ -1,0 +1,657 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(background_image1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position-x: center;
+  background-attachment: scroll;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(247, 238, 255);
+}
+nav {
+  height: auto;
+  width: 100%;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  overflow: hidden;
+}
+.logo {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+  padding-left: 2rem;
+  padding-right: 0.1rem;
+  font-family: Tangerine;
+}
+.logo a {
+  color: blueviolet;
+}
+.navlist {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 10px;
+}
+nav li {
+  list-style: none;
+  padding: 1.5rem ;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navlist a {
+  color: black;
+  text-decoration: none;
+  font-size: large;
+  position: relative;
+  text-align: center;
+}
+.navlist a:hover {
+  color: blueviolet;
+}
+.navlist a::before {
+  background-color: rgb(179, 114, 241);
+  left: 0;
+  width: 0;
+  position: absolute;
+  content: "";
+  bottom: -0.9rem;
+  height: 0.2rem;
+  transition: 0.3s ease-in-out;
+}
+.navlist a:hover::before {
+  width: 100%;
+}
+.navbtn {
+  padding-right: 2.5rem;
+}
+button {
+  height: 4.8rem;
+  width: 16rem;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 0.48rem;
+  background-color: rgb(179, 114, 241);
+  border: 0.2rem white;
+  color: white;
+  align-items: center;
+}
+button:hover {
+  background-color: rgb(154, 66, 235);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    height: auto;
+    width: 100%;
+    background-image: url(background_image1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-x: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: auto;
+    background-color: rgb(247, 238, 255);
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav .navlist {
+    font-size: xx-small;
+    padding: 0;
+  } 
+.logo {
+  width: 100%;
+  height: 9rem;
+  padding: 0;
+  font-size: 8rem;
+
+}
+nav button{
+  height: 4.5rem;
+  width: 50rem;
+  padding: 0;
+  font-size: 2.5rem;
+  align-items: center;
+}
+.navbtn{
+  padding: 0;
+}
+.side-img{
+  margin: 0.8rem 3rem;
+}
+.txt{
+  margin: 0 0.5rem;
+}
+.txt h2{
+  font-size: 2.5rem;
+}
+.sign {
+    height: auto;
+    width: 30%;
+}
+.side-img{
+  margin: 0.8rem 0.8rem !important;
+}
+.side-img img{
+  height: 35rem !important;
+  width: 45rem !important;
+  padding: 7rem 0;
+}
+  @media only screen and (max-width: 768px) {
+    html {
+      font-size: 55%;
+    }
+    body {
+      height: auto;
+      width: 100%;
+      background-image: url(background_image1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position-x: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: auto;
+      background-color: rgb(247, 238, 255);
+    }
+    nav {
+      flex-direction: column;
+    }
+    nav .navlist {
+      font-size: 0%;
+    } 
+    .logo {
+      width: 100%;
+      height: 9rem;
+      padding: 0;
+      font-size: 8rem;
+    
+    }
+    nav button{
+      height: 4.5rem;
+      width: 50rem;
+      padding: 0;
+      font-size: 2.5rem;
+      align-items: center;
+    }
+    .navbtn{
+      padding: 0;
+    }
+    .sign {
+      height: auto;
+      width: 40%;
+    }
+    .side-img{
+      margin: 0.6rem 0.2rem !important;
+    }
+    .side-img img{
+      height: 27rem !important;
+      width: 35rem !important;
+      padding: 7rem 0;
+    }
+    .txt h2{
+      font-size: 4.5rem !important;
+    }
+    .txt p{
+      font-size: medium !important;
+      font-weight: 500 !important;
+    }
+    .txt{
+      margin: 0 0.5rem !important;
+    }
+    .txt button{
+      width: auto;
+      height: 5rem;
+      font-size: medium;
+    }
+  }
+ @media only screen and (max-width: 570px) {
+  html{
+    font-size: 40%;
+  }
+.sign {
+  height: auto;
+  width: 20%;
+}
+nav {
+  flex-direction: column;
+}
+.logo {
+  width: 100%;
+  height: 10rem;
+  padding: 0;
+  font-size: 10rem;
+}
+nav .navlist{
+  display: grid;
+  font-size: xx-small;
+  margin: 0;
+  padding: 0;
+}
+nav button{
+  height: 6rem;
+  width: 50rem;
+  padding: 0;
+  font-size: 3rem;
+  align-items: center;
+}
+ button{
+  height: auto;
+  width: 100%;
+}
+.side-img{
+  margin: 0.8rem 0.2rem !important;
+}
+.side-img img{
+  height: 25rem !important;
+  width: 35rem !important;
+  padding: 7rem 0;
+}
+.txt h2{
+  font-size: 4rem !important;
+}
+.txt p{
+  font-size: small !important;
+  font-weight: 100 !important;
+}
+.txt{
+  margin: 0 1rem !important;
+}
+.txt button{
+  width: auto;
+  height: 4rem;
+  font-size: small;
+}}
+}
+  @media only screen and (min-width: 992px) {
+    html {
+      font-size: 70%;
+    }
+    body {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+section {
+  height: 63rem;
+}
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+}
+.background {
+  max-width: 136rem;
+  margin: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sign {
+  width: 35rem;
+  height: 40rem;
+  align-items: center;
+  border-radius: 0.6rem;
+  margin-top: -6rem;
+  padding-left: 1rem;
+  padding-right: 0.6rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem rgb(217, 181, 248);
+}
+#text {
+  box-sizing: border-box;
+  height: 4rem;
+  width: 95%;
+  font-size: large;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#email {
+  box-sizing: border-box;
+  height: 4rem;
+  width: 95%;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.sign button {
+  width: 28.8rem;
+  height: 3.5rem;
+  align-items: center;
+  margin-left: 2.3rem;
+  margin-top: 2.5rem;
+}
+.sign h2 {
+  text-align: center;
+  font-family: Lugrasimo;
+  font-size: 4.5rem;
+  margin-bottom: 0.8rem;
+  color: rgb(143, 40, 240);
+  font-family: Tangerine;
+}
+.sign h4 {
+  font-size: large;
+  margin-bottom: 0.5rem;
+  color: blueviolet;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.sign input {
+  height: 100%;
+  width: 100%;
+  color: blueviolet;
+  background-color: rgb(247, 238, 255);
+  border: none;
+  border-bottom: 0.16rem solid black;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+.sign p a {
+  color: black;
+  margin-top: 0.07rem;
+  font-weight: 600;
+}
+.sign p a u {
+  color: blue;
+}
+.sign p {
+  margin-top: 0.5rem;
+  align-items: center;
+  text-align: center;
+  font-family: initial;
+  font-style: italic;
+}
+.itext button {
+  border: 0.05rem solid black;
+  border-style: dotted;
+}
+.itext h1 {
+  font-size: 6.5rem;
+  font-family: Tangerine;
+  margin-bottom: 1rem;
+}
+.itext h3 {
+  font-size: xx-large;
+  margin-top: 0.06rem;
+  margin-bottom: 1rem;
+  font-family: Tangerine;
+}
+.itext p {
+  font-size: large;
+  font-weight: 600;
+  font-style: italic;
+}
+.section2 h1 {
+  font-size: 7.5rem;
+  margin-top: 0.1rem;
+  font-family: Tangerine;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.section3{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 4rem;
+  height: 50rem;
+}
+.about{
+  font-size: 7.5rem;
+  margin-top: 2rem;
+  font-family: Tangerine;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+.txt{
+  margin: 0rem;
+}
+.txt h2{
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: tangerine;
+}
+.txt p{
+  font-size: large;
+  font-weight: 600;
+  font-style: italic;
+}
+.txt button{
+ border-radius: 0;
+ border-style: solid purple;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.side-img{
+  margin: 1rem ;
+}
+.side-img img{
+  height: 40rem;
+  width: auto;
+}
+.pic-ctn {
+  width: 100%;
+  height: 20rem;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-250px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  margin-top: 8vh;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  height: 42rem;
+  width: 80rem;
+  top: 0;
+  left: calc(50% - 40rem);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+.footer img {
+max-width: 100%;
+height: auto;
+}
+.footer {
+background: #1b262c;
+padding-top: 8rem;
+padding-bottom: 4rem;
+}
+@media only screen and (max-width:768px) { 
+.single_footer{margin-bottom:30px;}
+}
+.single_footer h4 {
+color: #fff;
+margin-top: 0;
+margin-bottom: 2.5rem;
+font-weight: 700;
+text-transform: uppercase;
+font-size: 2.3rem;
+font-style: oblique;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Connect{
+  font-size: 2.5rem;
+  color: white;
+  font-style: oblique;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.single_footer h4::after {
+content: "";
+display: block;
+height: 0.2rem;
+width: 4rem;
+background: #fff;
+margin-top: 20px;
+}
+.single_footer p{color:#fff;}
+.single_footer ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.single_footer ul li a {
+color: #fff;
+-webkit-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+line-height: 36px;
+font-size: 1.5rem;
+text-transform: capitalize;
+}
+.single_footer ul li a:hover { color: #ff3666; }
+
+.single_footer_address ul li{color:#fff;}
+.single_footer_address ul li span {
+font-weight: 400;
+color: #fff;
+line-height: 28px;
+}
+.contact_social ul {
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+.social_profile {margin-top:40px;}
+.social_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+.social_profile ul li{float:left;}
+.social_profile ul li a {
+text-align: center;
+border: 0px;
+text-transform: uppercase;
+transition: all 0.3s ease 0s;
+margin: 0px 5px;
+font-size: 18px;
+color: #fff;
+border-radius: 30px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+display: block;
+border: 1px solid rgba(255,255,255,0.2);
+}
+@media only screen and (max-width:768px) { 
+.social_profile ul li a{margin-right:10px;margin-bottom:10px;}
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li a{
+width:40px;
+height:40px;
+line-height:40px;
+}
+
+}
+.social_profile ul li a:hover{
+background:#ff3666;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+.copyright {
+margin-top: 70px;
+padding-top: 40px;
+color:#fff;
+font-size: 15px;
+border-top: 1px solid rgba(255,255,255,0.4);
+text-align: center;
+}
+.copyright a{color:#01c7e9;transition: all 0.2s ease 0s;}
+.copyright a:hover{color:#ff3666;}
